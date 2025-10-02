@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-Fetch the top **2000 Discord invites** from [Discadia](https://discadia.com) in just a couple of minutes!  
+Fetch all discord invites in the top **2000 pages** from [Discadia](https://discadia.com) in just a couple of minutes!  
 Optimized with **multi-threading**, **proxy support**, and **AES decryption bypass** for Discadia’s `_cosmic_auth` cookie.
 
 ---
