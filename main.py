@@ -31,7 +31,7 @@ HEADERS = {
 }
 
 def save(filelocation: str, item: str) -> None:
-    """Save scraped invite links to a file"""
+    """Save content"""
     with open(filelocation, "a", encoding="utf-8") as file:
         file.write(item + "\n")
 
@@ -92,7 +92,6 @@ def fetch(i: int, retries=3) -> None:
         fetch(i, retries-1)
 
 async def loop():
-    """Run scraping across multiple pages"""
     threads  = int(input("Enter the amount of threads: "))
     print("\n")
     executor = ThreadPoolExecutor(max_workers=threads)
@@ -107,3 +106,4 @@ if __name__ == "__main__":
     asyncio.run(loop())
     gc.collect()
     input(Fore.GREEN + "\n[+] PRESS ENTER TO EXIT...")
+
